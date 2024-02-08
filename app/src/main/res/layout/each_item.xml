@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:outlineSpotShadowColor="@color/black"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:layout_gravity="center_horizontal"
+    android:foregroundGravity="center">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/siv_product_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="20dp"
+            android:padding="2dp"
+            android:layout_gravity="center"
+            android:background="@drawable/siv_corner_style"
+            android:scaleType="centerCrop"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Product Name"
+            android:textColor="#635F5F"
+            android:padding="2dp"
+            android:layout_toRightOf="@+id/siv_product_image"/>
+
+        <TextView
+            android:id="@+id/tv_product_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Product Description"
+            android:textColor="#635F5F"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:freezesText="true"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:padding="2dp"
+            android:layout_below="@+id/tv_product_name"
+            android:layout_toEndOf="@+id/siv_product_image"/>
+
+        <TextView
+            android:id="@+id/tv_product_price_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="Price: \u20B9"
+            android:textColor="#635F5F"
+            android:padding="2dp"
+            android:layout_below="@+id/tv_product_description"
+            android:layout_toEndOf="@+id/siv_product_image"/>
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:text="1000"
+            android:textColor="#595656"
+            android:paddingTop="2dp"
+            android:layout_below="@+id/tv_product_description"
+            android:layout_toEndOf="@+id/tv_product_price_placeholder"/>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
